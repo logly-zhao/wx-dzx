@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'StaticPagesController@home');
+Route::get('/banner/list', 'StaticPagesController@banner');
+Route::get('/shop/goods/category/all', 'StaticPagesController@goods');
